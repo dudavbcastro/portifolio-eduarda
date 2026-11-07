@@ -1,13 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+    <script src="js/script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
         content="Portfólio de Eduarda Castro, estudante de Tecnologia da Informação e desenvolvimento de software.">
+
+    <meta name="author" content="Eduarda Castro">
 
     <title>Eduarda Castro | Portfólio</title>
 
@@ -15,60 +17,55 @@
 </head>
 
 <body>
-
-    <!-- NAVEGAÇÃO -->
+<canvas id="neural-network"></canvas>
+    <!-- CABEÇALHO -->
     <header class="header">
-        <nav class="navbar container">
+        <div class="container navbar">
 
-            <a href="#inicio" class="logo">
-                Eduarda<span>.</span>
-            </a>
+            <a href="#inicio" class="logo">Eduarda<span>.</span></a>
 
             <button class="menu-toggle" id="menu-toggle"
                 aria-label="Abrir menu" aria-expanded="false">
                 ☰
             </button>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
 
-        </nav>
+        </div>
     </header>
 
 
     <main>
 
-        <!-- APRESENTAÇÃO -->
-        <section class="hero container" id="inicio">
+        <!-- APRESENTAÇÃO PRINCIPAL -->
+        <section class="container hero" id="inicio">
 
             <div class="hero-content">
 
-                <span class="eyebrow">
-                    OLÁ, SEJA BEM-VINDO(A)!
-                </span>
+                <span class="eyebrow">ESTUDANTE DE TECNOLOGIA DA INFORMAÇÃO</span>
 
                 <h1>
-    Eduarda Castro
-    <span class="hero-subtitle">
-        Desenvolvimento e Tecnologia.
-    </span>
-</h1>
+                    Eduarda Castro
+                    <span class="hero-subtitle">Desenvolvimento e Tecnologia.</span>
+                </h1>
 
                 <p class="hero-description">
-                    Estudante de Tecnologia da Informação em transição
-                    da Enfermagem para a Tecnologia.
-
-                    Construindo soluções através da programação,
-                    desenvolvimento de sistemas e aprendizado contínuo.
+                    Estudante de Tecnologia da Informação em transição da
+                    Enfermagem para a Tecnologia. Construindo soluções através
+                    da programação, desenvolvimento de sistemas e aprendizado
+                    contínuo.
                 </p>
 
                 <div class="hero-buttons">
-
                     <a href="#projetos" class="btn btn-primary">
                         Conheça meus projetos
                     </a>
@@ -76,7 +73,6 @@
                     <a href="#contato" class="btn btn-outline">
                         Entre em contato
                     </a>
-
                 </div>
 
                 <div class="hero-status">
@@ -86,7 +82,11 @@
 
             </div>
 
+
+            <!-- CARTÃO COM CÓDIGO -->
             <div class="hero-card">
+
+                <div class="hero-decoration"></div>
 
                 <div class="code-window">
 
@@ -97,30 +97,35 @@
                     </div>
 
                     <div class="code-content">
-                        <p><span class="code-purple">public class</span>
-                            <span class="code-blue">Eduarda</span> {</p>
 
-                        <p class="indent">
-                            <span class="code-purple">String</span> foco =
+                        <div>
+                            <span class="code-purple">public class</span>
+                            <span class="code-blue">Eduarda</span> {
+                        </div>
+
+                        <div class="indent">
+                            <span class="code-purple">String</span>
+                            foco =
                             <span class="code-green">"Tecnologia"</span>;
-                        </p>
+                        </div>
 
-                        <p class="indent">
-                            <span class="code-purple">String</span> objetivo =
+                        <div class="indent">
+                            <span class="code-purple">String</span>
+                            objetivo =
                             <span class="code-green">"Evoluir"</span>;
-                        </p>
+                        </div>
 
-                        <p class="indent">
-                            <span class="code-purple">boolean</span> desistir =
+                        <div class="indent">
+                            <span class="code-purple">boolean</span>
+                            desistir =
                             <span class="code-orange">false</span>;
-                        </p>
+                        </div>
 
-                        <p>}</p>
+                        <div>}</div>
+
                     </div>
 
                 </div>
-
-                <div class="hero-decoration"></div>
 
             </div>
 
@@ -128,38 +133,83 @@
 
 
         <!-- SOBRE MIM -->
-        <section class="section container" id="sobre">
+        <section class="section section-alt" id="sobre">
 
-            <div class="section-heading">
-                <span class="eyebrow">MINHA TRAJETÓRIA</span>
-                <h2>Sobre mim</h2>
-            </div>
+            <div class="container">
 
-            <div class="about-content">
-
-                <div>
-                    <h3>Uma nova área, novos desafios.</h3>
+                <div class="section-heading">
+                    <span class="eyebrow">MINHA HISTÓRIA</span>
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Uma nova área, novos desafios e a mesma vontade de aprender.
+                    </p>
                 </div>
 
-                <div>
-                    <p>
-                        Minha trajetória profissional começou na área da
-                        Enfermagem. Foi nessa experiência que desenvolvi
-                        responsabilidade, organização, capacidade de
-                        resolução de problemas e trabalho em equipe.
-                    </p>
 
-                    <p>
-                        Atualmente, sou estudante de Bacharelado em
-                        Tecnologia da Informação pela UNIVESP e direciono
-                        meus estudos para o desenvolvimento de software.
-                    </p>
+                <div class="about-content">
 
-                    <p>
-                        Tenho interesse em desenvolvimento de sistemas,
-                        aplicações web, Java, Python e soluções que
-                        transformem necessidades reais em tecnologia.
-                    </p>
+                    <div>
+                        <h3>
+                            Uma nova área,
+                            novos desafios.
+                        </h3>
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            Minha história com a tecnologia começou ainda na
+                            adolescência. Durante o ensino médio, destaquei-me
+                            nos estudos de informática e recebi um notebook como
+                            prêmio em 2011. Em 2026, esse mesmo equipamento ainda
+                            faz parte da minha trajetória, sendo utilizado nos
+                            estudos e projetos que ajudam a construir minha
+                            carreira.
+                        </p>
+
+                        <p>
+                            Aos 15 anos, fui convidada a atuar como instrutora
+                            de informática na escola onde estudava. Foi uma
+                            experiência importante, que despertou ainda mais
+                            meu interesse pela tecnologia e pelo compartilhamento
+                            de conhecimento.
+                        </p>
+
+                        <p>
+                            Minha formação também passou pela área da saúde.
+                            Sou formada em Tecnologia em Radiologia e Técnica
+                            em Enfermagem. Minha experiência profissional
+                            contribuiu para desenvolver habilidades como
+                            responsabilidade, organização, comunicação,
+                            trabalho em equipe e resolução de problemas.
+                        </p>
+
+                        <p>
+                            Atualmente, curso Bacharelado em Tecnologia da
+                            Informação na UNIVESP e estou em transição
+                            profissional para a área de tecnologia, com foco
+                            no desenvolvimento de software.
+                        </p>
+
+                        <p>
+                            Tenho interesse no desenvolvimento de sistemas,
+                            aplicações web e automação de processos. Venho
+                            desenvolvendo conhecimentos em Java, Python,
+                            HTML, CSS, React, Spring Boot, PostgreSQL e
+                            ServiceNow.
+                        </p>
+
+                        <p>
+                            Acredito que minha trajetória em diferentes áreas
+                            me proporciona uma perspectiva ampla para entender
+                            problemas e buscar soluções. Estou construindo
+                            minha carreira em tecnologia com dedicação,
+                            curiosidade e aprendizado contínuo.
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -168,67 +218,80 @@
 
 
         <!-- TECNOLOGIAS -->
-        <section class="section section-alt" id="tecnologias">
+        <section class="section" id="tecnologias">
 
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="eyebrow">FERRAMENTAS E APRENDIZADO</span>
+                    <span class="eyebrow">CONHECIMENTOS</span>
                     <h2>Tecnologias</h2>
                     <p>
-                        Conhecimentos que venho desenvolvendo na minha
-                        jornada em Tecnologia da Informação.
+                        Ferramentas e tecnologias que fazem parte dos meus
+                        estudos e projetos.
                     </p>
                 </div>
+
 
                 <div class="skills-grid">
 
                     <div class="skill-card">
                         <span class="skill-icon">☕</span>
                         <h3>Java</h3>
-                        <p>Programação orientada a objetos</p>
+                        <p>Programação orientada a objetos e desenvolvimento.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🐍</span>
                         <h3>Python</h3>
-                        <p>Lógica e desenvolvimento</p>
+                        <p>Lógica de programação e desenvolvimento.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🌐</span>
                         <h3>HTML5</h3>
-                        <p>Estrutura de páginas web</p>
+                        <p>Estruturação de páginas web.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🎨</span>
                         <h3>CSS3</h3>
-                        <p>Estilização e responsividade</p>
+                        <p>Estilização e responsividade de interfaces.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">⚛️</span>
                         <h3>React</h3>
-                        <p>Desenvolvimento de interfaces</p>
+                        <p>Desenvolvimento de interfaces web.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🍃</span>
                         <h3>Spring Boot</h3>
-                        <p>Desenvolvimento de APIs</p>
+                        <p>Desenvolvimento de aplicações backend.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🐘</span>
                         <h3>PostgreSQL</h3>
-                        <p>Banco de dados relacional</p>
+                        <p>Banco de dados relacional.</p>
                     </div>
 
                     <div class="skill-card">
                         <span class="skill-icon">🔧</span>
                         <h3>Git e GitHub</h3>
-                        <p>Versionamento de código</p>
+                        <p>Versionamento e gerenciamento de código.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">⚙️</span>
+                        <h3>ServiceNow</h3>
+                        <p>Estudos da plataforma e automação de processos.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">📱</span>
+                        <h3>Android Studio</h3>
+                        <p>Desenvolvimento de aplicações Android com Java.</p>
                     </div>
 
                 </div>
@@ -239,99 +302,172 @@
 
 
         <!-- PROJETOS -->
-        <section class="section container" id="projetos">
+        <section class="section section-alt" id="projetos">
 
-            <div class="section-heading">
-                <span class="eyebrow">PRÁTICA E DESENVOLVIMENTO</span>
-                <h2>Meus projetos</h2>
-                <p>
-                    Projetos acadêmicos e pessoais que fazem parte
-                    da minha evolução como profissional de tecnologia.
-                </p>
-            </div>
+            <div class="container">
 
-            <div class="projects-grid">
-
-                <article class="project-card">
-
-                    <span class="project-number">01 / SISTEMAS WEB</span>
-
-                    <div class="project-symbol">▣</div>
-
-                    <h3>Sistema de Ponto de Venda</h3>
-
+                <div class="section-heading">
+                    <span class="eyebrow">PRÁTICA E DESENVOLVIMENTO</span>
+                    <h2>Projetos</h2>
                     <p>
-                        Desenvolvimento de um sistema PDV com controle
-                        de caixa, operações financeiras e gerenciamento
-                        de vendas.
+                        Projetos desenvolvidos durante meus estudos e minha
+                        jornada de aprendizado em tecnologia.
                     </p>
-
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>React</span>
-                        <span>PostgreSQL</span>
-                    </div>
-
-                    <span class="project-status">
-                        Em desenvolvimento
-                    </span>
-
-                </article>
+                </div>
 
 
-                <article class="project-card">
-
-                    <span class="project-number">02 / ANDROID</span>
-
-                    <div class="project-symbol">▯</div>
-
-                    <h3>Aplicação Android</h3>
-
-                    <p>
-                        Estudos práticos de desenvolvimento mobile,
-                        consumo de dados XML, Activities, Intents
-                        e persistência com SQLite.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Android Studio</span>
-                        <span>SQLite</span>
-                        <span>XML</span>
-                    </div>
-
-                    <span class="project-status">
-                        Projeto acadêmico
-                    </span>
-
-                </article>
+                <div class="projects-grid">
 
 
-                <article class="project-card">
+                    <!-- PROJETO 1 -->
+                    <article class="project-card">
 
-                    <span class="project-number">03 / SISTEMAS WEB</span>
+                        <span class="project-number">PROJETO 01</span>
 
-                    <div class="project-symbol">✂</div>
+                        <div class="project-symbol">☕</div>
 
-                    <h3>BarberFlow</h3>
+                        <h3>Calculadora Java</h3>
 
-                    <p>
-                        Projeto de sistema de gestão para barbearias,
-                        com proposta de organização de agendamentos
-                        e atendimento.
-                    </p>
+                        <p>
+                            Projeto desenvolvido em Java para praticar lógica
+                            de programação e conceitos da linguagem.
+                        </p>
 
-                    <div class="project-tags">
-                        <span>Arquitetura</span>
-                        <span>Desenvolvimento web</span>
-                    </div>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Lógica</span>
+                        </div>
 
-                    <span class="project-status">
-                        Em planejamento
-                    </span>
+                        <a href="https://github.com/dudavbcastro/calculadora-java"
+                            class="project-status"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ver repositório →
+                        </a>
 
-                </article>
+                    </article>
+
+
+                    <!-- PROJETO 2 -->
+                    <article class="project-card">
+
+                        <span class="project-number">PROJETO 02</span>
+
+                        <div class="project-symbol">🌦️</div>
+
+                        <h3>Weather API</h3>
+
+                        <p>
+                            API REST desenvolvida com Spring Boot para consultar
+                            dados meteorológicos utilizando a API OpenWeather.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Spring Boot</span>
+                            <span>REST API</span>
+                            <span>OpenWeather</span>
+                        </div>
+
+                        <a href="https://github.com/dudavbcastro/weather-api"
+                            class="project-status"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ver repositório →
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROJETO 3 -->
+                    <article class="project-card">
+
+                        <span class="project-number">PROJETO 03</span>
+
+                        <div class="project-symbol">⏱️</div>
+
+                        <h3>Meu Temporizador</h3>
+
+                        <p>
+                            Aplicação de temporizador inspirada na técnica
+                            Pomodoro, desenvolvida para organizar períodos
+                            de foco e pausas.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <a href="https://github.com/dudavbcastro/meutemporizador-app"
+                            class="project-status"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ver repositório →
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROJETO 4 -->
+                    <article class="project-card">
+
+                        <span class="project-number">PROJETO 04</span>
+
+                        <div class="project-symbol">🛒</div>
+
+                        <h3>Sistema de Ponto de Venda</h3>
+
+                        <p>
+                            Sistema de gestão de vendas com controle de caixa,
+                            operações financeiras e gerenciamento de usuários.
+                            Projeto em desenvolvimento.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <span class="project-status">
+                            Em desenvolvimento
+                        </span>
+
+                    </article>
+
+
+                    <!-- PROJETO 5 -->
+                    <article class="project-card">
+
+                        <span class="project-number">PROJETO 05</span>
+
+                        <div class="project-symbol">📱</div>
+
+                        <h3>Aplicação Android</h3>
+
+                        <p>
+                            Projeto acadêmico desenvolvido em Java, explorando
+                            Activities, comunicação com serviços externos,
+                            leitura de XML e persistência de dados.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>SQLite</span>
+                            <span>XML</span>
+                        </div>
+
+                        <span class="project-status">
+                            Projeto acadêmico
+                        </span>
+
+                    </article>
+
+
+                </div>
 
             </div>
 
@@ -339,31 +475,61 @@
 
 
         <!-- FORMAÇÃO -->
-        <section class="section section-alt" id="formacao">
+        <section class="section" id="formacao">
 
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="eyebrow">EDUCAÇÃO</span>
-                    <h2>Formação acadêmica</h2>
+                    <span class="eyebrow">TRAJETÓRIA ACADÊMICA</span>
+                    <h2>Formação</h2>
+                    <p>
+                        Minha formação acadêmica e profissional.
+                    </p>
                 </div>
 
+
                 <div class="education-card">
+
                     <div>
                         <span class="education-year">2024 — 2027</span>
+
                         <h3>Bacharelado em Tecnologia da Informação</h3>
+
                         <p>Universidade Virtual do Estado de São Paulo — UNIVESP</p>
                     </div>
+
                     <span class="education-status">Em andamento</span>
+
                 </div>
 
+
                 <div class="education-card">
+
                     <div>
-                        <span class="education-year">2022</span>
+                        <span class="education-year">2020 — 2022</span>
+
                         <h3>Técnico em Enfermagem</h3>
-                        <p>ETEC</p>
+
+                        <p>ETEC Amim Jundi - Centro Paula Souza</p>
                     </div>
+
                     <span class="education-status">Concluído</span>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <div>
+                        <span class="education-year">2014 — 2016</span>
+
+                        <h3>Tecnologia em Radiologia</h3>
+
+                        <p>Universidade do Oeste Paulista — UNOESTE</p>
+                    </div>
+
+                    <span class="education-status">Concluído</span>
+
                 </div>
 
             </div>
@@ -372,36 +538,51 @@
 
 
         <!-- CONTATO -->
-        <section class="section container" id="contato">
+        <section class="section section-alt" id="contato">
 
-            <div class="contact-box">
+            <div class="container">
 
-                <span class="eyebrow">VAMOS CONVERSAR?</span>
+                <div class="contact-box">
 
-                <h2>Vamos construir algo juntos?</h2>
+                    <span class="eyebrow">VAMOS CONVERSAR?</span>
 
-                <p>
-                    Estou aberta a oportunidades de aprendizado,
-                    desenvolvimento profissional e novos desafios
-                    na área de Tecnologia da Informação.
-                </p>
+                    <h2>Entre em contato</h2>
 
-                <a href="mailto:dudavbcastro@gmail.com"
-                    class="btn btn-primary">
-                    Enviar e-mail
-                </a>
+                    
+<p>
+    Estou aberta a oportunidades, conexões profissionais
+    e novos desafios na área de tecnologia.
+</p>
 
-                <div class="social-links">
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=dudavbcastro@gmail.com"
+   class="btn btn-primary"
+   target="_blank"
+   rel="noopener noreferrer">
+    Enviar e-mail
+</a>
 
-                    <a href="https://github.com/dudavbcastro"
-                        target="_blank" rel="noopener noreferrer">
-                        GitHub
-                    </a>
+<div class="social-links">
 
-                    <a href="https://www.linkedin.com/in/eduardavbcastro/"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
+    <a href="https://github.com/dudavbcastro"
+       target="_blank"
+       rel="noopener noreferrer">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/eduardavbcastro/"
+       target="_blank"
+       rel="noopener noreferrer">
+        LinkedIn
+    </a>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dudavbcastro@gmail.com"
+       target="_blank"
+       rel="noopener noreferrer">
+        E-mail
+    </a>
+
+</div>
+
 
                 </div>
 
@@ -414,14 +595,15 @@
 
     <!-- RODAPÉ -->
     <footer class="footer">
+
         <p>
-            © <span id="year"></span> Eduarda Castro.
-            Desenvolvido com dedicação e tecnologia.
+            © <span id="current-year"></span> Eduarda Castro.
+            Desenvolvido com dedicação e aprendizado contínuo.
         </p>
+
     </footer>
 
 
-    <script src="js/script.js"></script>
-
 </body>
+
 </html>

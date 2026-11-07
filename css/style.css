@@ -47,7 +47,7 @@ a {
 }
 
 .section-alt {
-    background: var(--fundo-secundario);
+    background: rgba(16, 29, 53, 0.88);
 }
 
 
@@ -638,4 +638,43 @@ a {
     .contact-box {
         padding: 45px 20px;
     }
+}
+
+/* REDE NEURAL ANIMADA */
+
+body {
+    position: relative;
+    isolation: isolate;
+}
+
+#neural-network {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+/* Mantém o conteúdo acima da animação */
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Garante que o canvas fique atrás de todo o conteúdo */
+body {
+    position: relative;
+    isolation: isolate;
+}
+
+#neural-network {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
